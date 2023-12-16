@@ -1,0 +1,172 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Header styles */
+header {
+  background-color: #d9d9d9;
+  color: #000000;
+  padding: 1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0);
+}
+
+/* Add glow effect to the header */
+header.glow {
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links li a {
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Add glow effect to the navigation links */
+.nav-links li a.glow {
+  text-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
+}
+
+/* Attractive transitions for navigation links */
+.nav-links li a:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f73e00;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a:hover:before {
+  width: 100%;
+  visibility: visible;
+}
+
+/* Hero styles */
+.hero {
+  background-image: url('https://irp-cdn.multiscreensite.com/b7eb0ee9/dms3rep/multi/background/motorbike-service-and-repair-hero-1920-600.jpg');
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s ease-in-out;
+}
+
+/* Add glow effect to the hero */
+.hero.glow {
+  box-shadow: 0 0 20px rgba(255, 87, 34, 0.8);
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.cta-btn {
+  padding: 1rem 2rem;
+  background-color: #190904;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Services styles */
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.service-card {
+  width: 300px;
+  padding: 1rem;
+  border: 1px solid #ffffff;
+  background-color: #996d6d;
+  border-radius: 5px;
+  color: #fdfdfd;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Footer styles */
+footer {
+  background-color: #ab7c7c;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0);
+}
+
+/* Add glow effect to the footer */
+footer.glow {
+  box-shadow: 0 0 10px rgba(238, 64, 10, 0.467);
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .hero {
+    height: 300px;
+  }
+}
